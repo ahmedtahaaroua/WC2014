@@ -53,26 +53,9 @@ public class StadeController {
 			}
 			
 			conn.disconnect();
-			result="{\"Android\":"+result+"}";
-			System.out.println(result+"eee");
-			try {
-				JSONObject jsonObject=new JSONObject(result);
-				JSONArray jsonArray = jsonObject.optJSONArray("Android");
-				System.out.println("sqsss"+jsonArray.length());
-				for(int i=0;i<jsonArray.length();i++){
-				Stade Stade=new Stade();
-				Stade.setName(jsonArray.getJSONObject(i).get("sStadiumName").toString());
-				Stade.setCapacity(Integer.parseInt(jsonArray.getJSONObject(i).get("iSeatsCapacity").toString()));
-				Stade.setCity(jsonArray.getJSONObject(i).get("sCityName").toString());	
-				Stade.setUrlWiki(jsonArray.getJSONObject(i).get("sWikipediaURL").toString());
-				Stade.setUrlMap(jsonArray.getJSONObject(i).get("sGoogleMapsURL").toString());
-					a_retourner.add(Stade);
-				}
-				
-			} catch (JSONException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			
+			
+			a_retourner = getStadeFromGameInfo(result);
 	 
 		  } catch (MalformedURLException e) {
 	 
@@ -85,5 +68,32 @@ public class StadeController {
 		  }
 		
 	 return a_retourner;
+	}
+
+
+	static public List<Stade> getStadeFromGameInfo(String result) {
+		List<Stade> to_return=new ArrayList<Stade>();
+
+		result="{\"Android\":"+result+"}";
+		System.out.println(result+"eee");
+		try {
+			JSONObject jsonObject=new JSONObject(result);
+			JSONArray jsonArray = jsonObject.optJSONArray("Android");
+			System.out.println("sqsss"+jsonArray.length());
+			for(int i=0;i<jsonArray.length();i++){
+			Stade Stade=new Stade();
+			Stade.setName(jsonArray.getJSONObject(i).get("sStadiumName").toString());
+			Stade.setCapacity(Integer.parseInt(jsonArray.getJSONObject(i).get("iSeatsCapacity").toString()));
+			Stade.setCity(jsonArray.getJSONObject(i).get("sCityName").toString());	
+			Stade.setUrlWiki(jsonArray.getJSONObject(i).get("sWikipediaURL").toString());
+			Stade.setUrlMap(jsonArray.getJSONObject(i).get("sGoogleMapsURL").toString());
+				to_return.add(Stade);
+			}
+			
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return to_return;
 	}
 }
