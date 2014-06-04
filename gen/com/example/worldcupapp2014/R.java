@@ -11,22 +11,35 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int e1=0x7f020000;
+        public static final int e2=0x7f020001;
+        public static final int equipe1=0x7f020002;
+        public static final int g1=0x7f020003;
+        public static final int g2=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int pic01=0x7f020006;
+        public static final int stade1=0x7f020007;
+        public static final int stade2=0x7f020008;
+        public static final int stade3=0x7f020009;
+        public static final int stade4=0x7f02000a;
     }
     public static final class id {
         public static final int button1=0x7f070001;
-        public static final int gallery1=0x7f070002;
-        public static final int imageview1=0x7f070003;
-        public static final int menu_settings=0x7f070004;
+        public static final int gallery1=0x7f070005;
+        public static final int imageButton1=0x7f070004;
+        public static final int imageView1=0x7f070002;
+        public static final int imageView2=0x7f070003;
+        public static final int imageview1=0x7f070006;
+        public static final int menu_settings=0x7f070007;
         public static final int textView1=0x7f070000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int activity_stades=0x7f030001;
+        public static final int activity_stade=0x7f030001;
+        public static final int activity_stades=0x7f030002;
     }
     public static final class menu {
         public static final int activity_main=0x7f060000;
-        public static final int activity_stades=0x7f060001;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
@@ -69,7 +82,7 @@ public final class R {
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Gallery1_android_galleryItemBackground com.example.worldcupapp2014:android_galleryItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Gallery1_android_galleryItemBackground android:galleryItemBackground}</code></td><td></td></tr>
            </table>
            @see #Gallery1_android_galleryItemBackground
          */
@@ -77,9 +90,9 @@ public final class R {
             0x0101004c
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.worldcupapp2014.R.attr#android_galleryItemBackground}
+          <p>This symbol is the offset where the {@link android.R.attr#galleryItemBackground}
           attribute's value can be found in the {@link #Gallery1} array.
-          @attr name android:android_galleryItemBackground
+          @attr name android:galleryItemBackground
         */
         public static final int Gallery1_android_galleryItemBackground = 0;
     };
