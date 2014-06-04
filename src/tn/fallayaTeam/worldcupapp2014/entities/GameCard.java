@@ -8,7 +8,9 @@ int minute;
 String playerName;
 Boolean yCard;
 Boolean rCard;
-Team team;
+String teamName;
+String teamFlag;
+String teamFlagLarge;
 public Date getDateGame() {
 	return dateGame;
 }
@@ -39,11 +41,24 @@ public Boolean getrCard() {
 public void setrCard(Boolean rCard) {
 	this.rCard = rCard;
 }
-public Team getTeam() {
-	return team;
+public String getTeamName() {
+	return teamName;
 }
-public void setTeam(Team team) {
-	this.team = team;
+public void setTeamName(String teamName) {
+	this.teamName = teamName;
 }
+public String getTeamFlag() {
+	return teamFlag;
+}
+public void setTeamFlag(String teamFlag) {
+	this.teamFlag = teamFlag;
+}
+public String getTeamFlagLarge() {
+	return teamFlagLarge;
+}
+public void setTeamFlagLarge(String teamFlagLarge) {
+	this.teamFlagLarge = teamFlagLarge;
+}
+
 
 }
