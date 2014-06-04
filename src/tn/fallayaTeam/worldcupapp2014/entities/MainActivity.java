@@ -5,7 +5,9 @@ import java.net.URL;
 import java.util.List;
 import java.util.logging.Logger;
 
+import tn.fallayaTeam.worldcupapp2014.controller.GameInfoController;
 import tn.fallayaTeam.worldcupapp2014.controller.StadeController;
+import tn.fallayaTeam.worldcupapp2014.controller.test;
 import android.app.Activity;
 import android.content.Context;
 import android.os.AsyncTask;
@@ -71,15 +73,18 @@ public Context context;
 			Log.i("aaaaaaaaaa","zzzzzzz");
 			URL url=null;
 			try {
-				url = new URL("http://footballpool.dataaccess.eu/data/info.wso/AllStadiumInfo/JSON/debug");
+				url = new URL("http://footballpool.dataaccess.eu/data/info.wso/AllGames/JSON/debug");
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			StadeController stadeController=new StadeController(url);
-			List<Stade> stades=stadeController.getAllStade();
-			for(Stade stade:stades){
-				Log.i("aaaaaaaaaa",stade.getName());
+			//StadeController stadeController=new StadeController(url);
+			GameInfoController gameController=new GameInfoController(url);
+
+			//List<Stade> stades=stadeController.getAllStade();
+			List<GameInfo> stades= gameController.getAllGameInfo();
+			for(GameInfo stade:stades){
+				System.out.println(stade.getStade().getCity());
 			}
 	}
 }
