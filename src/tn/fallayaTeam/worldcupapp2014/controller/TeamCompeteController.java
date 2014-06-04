@@ -76,11 +76,11 @@ public class TeamCompeteController {
 	static public List<TeamCompete> getTeamCompete(String result) {
 		List<TeamCompete> to_return=new ArrayList<TeamCompete>();
 
-		result="{\"Androidd\":["+result+"]}";
+		result="{\"Android\":"+result+"}";
 		System.out.println(result+"eee");
 		try {
 			JSONObject jsonObject=new JSONObject(result);
-			JSONArray jsonArray = jsonObject.optJSONArray("Androidd");
+			JSONArray jsonArray = jsonObject.optJSONArray("Android");
 			System.out.println("sqsss"+jsonArray.length());
 			for(int i=0;i<jsonArray.length();i++){
 			TeamCompete tCompete = new TeamCompete();
