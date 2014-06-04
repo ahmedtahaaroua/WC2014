@@ -74,11 +74,11 @@ public class StadeController {
 	static public List<Stade> getStadeFromGameInfo(String result) {
 		List<Stade> to_return=new ArrayList<Stade>();
 
-		result="{\"Android\":"+result+"}";
+		result="{\"Androidd\":["+result+"]}";
 		System.out.println(result+"eee");
 		try {
 			JSONObject jsonObject=new JSONObject(result);
-			JSONArray jsonArray = jsonObject.optJSONArray("Android");
+			JSONArray jsonArray = jsonObject.optJSONArray("Androidd");
 			System.out.println("sqsss"+jsonArray.length());
 			for(int i=0;i<jsonArray.length();i++){
 			Stade Stade=new Stade();
