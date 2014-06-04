@@ -74,11 +74,11 @@ public class CoachController {
 	static public List<Coach> getCoach(String result) {
 		List<Coach> to_return=new ArrayList<Coach>();
 
-		result="{\"Androidd\":["+result+"]}";
+		result="{\"Android\":"+result+"}";;
 		System.out.println(result+"eee");
 		try {
 			JSONObject jsonObject=new JSONObject(result);
-			JSONArray jsonArray = jsonObject.optJSONArray("Androidd");
+			JSONArray jsonArray = jsonObject.optJSONArray("Android");
 			System.out.println("sqsss"+jsonArray.length());
 			for(int i=0;i<jsonArray.length();i++){
 			Coach coach = new Coach();
