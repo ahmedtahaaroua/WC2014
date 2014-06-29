@@ -1,0 +1,86 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3470), pid=2772, tid=8188
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 7.0-b147
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (21.0-b17 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000273d000):  JavaThread "Unknown thread" [_thread_in_vm, id=8188, stack(0x0000000002740000,0x0000000002840000)]
+
+Stack: [0x0000000002740000,0x0000000002840000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000273d000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8188, stack(0x0000000002740000,0x0000000002840000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x000007f70d9f0000 - 0x000007f70da23000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x000007faa2b00000 - 0x000007faa2cc0000 	C:\Windows\SYSTEM32\ntdll.dll
+0x000007faa03a0000 - 0x000007faa04d6000 	C:\Windows\system32\KERNEL32.DLL
+0x000007fa9fc20000 - 0x000007fa9fd13000 	C:\Windows\system32\KERNELBASE.dll
+0x000007faa1d20000 - 0x000007faa1dfe000 	C:\Windows\system32\ADVAPI32.dll
+0x000007faa0660000 - 0x000007faa07ac000 	C:\Windows\system32\USER32.dll
+0x000007fa9d5b0000 - 0x000007fa9d81a000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9200.16579_none_418ab7ef718b27ef\COMCTL32.dll
+0x000007faa02f0000 - 0x000007faa0395000 	C:\Windows\system32\msvcrt.dll
+0x000007faa27a0000 - 0x000007faa27e8000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007faa27f0000 - 0x000007faa2930000 	C:\Windows\system32\RPCRT4.dll
+0x000007faa2470000 - 0x000007faa25b1000 	C:\Windows\system32\GDI32.dll
+0x000007faa04e0000 - 0x000007faa0519000 	C:\Windows\system32\IMM32.DLL
+0x000007faa1f80000 - 0x000007faa2095000 	C:\Windows\system32\MSCTF.dll
+0x000000006f590000 - 0x000000006f661000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x000000006eec0000 - 0x000000006f58e000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x000007fa8f040000 - 0x000007fa8f049000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x000007fa9bb80000 - 0x000007fa9bba0000 	C:\Windows\SYSTEM32\WINMM.dll
+0x000007faa2250000 - 0x000007faa2257000 	C:\Windows\system32\PSAPI.DLL
+0x000007faa2260000 - 0x000007faa22b8000 	C:\Windows\system32\WS2_32.dll
+0x000007fa9bb30000 - 0x000007fa9bb62000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x000007faa2460000 - 0x000007faa2469000 	C:\Windows\system32\NSI.dll
+0x000000006eeb0000 - 0x000000006eebf000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x000000006ee80000 - 0x000000006eea8000 	C:\Program Files\Java\jre7\bin\java.dll
+0x000000006ee60000 - 0x000000006ee75000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:D:\d\android-sdk-windows\platforms\android-17\android.jar 
+java_command: tn.fallayaTeam.worldcupapp2014.controller.test
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0
+JRE_HOME=C:\Program Files\Java\jre7
+PATH=C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;c:\mingw\bin;C:\Program Files (x86)\apache-maven-3.0.4\bin;D:\ete 2013\android\apache-ant-1.9.1-bin\apache-ant-1.9.1\bin;C:\Program Files\Java\jdk1.7.0;C:\Users\Ahmed Taha\Documents\Downloads\android-sdk-windows\tools;C:\Users\Ahmed Taha\Documents\Downloads\android-sdk-windows\platform-tools;C:\Program Files (x86)\Windows Live\Shared;C:\wamp\bin\php\php5.4.12;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\TortoiseGit\bin;C:\wamp\bin\php\php5.4.12;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\glassfish-4.0\bin;C:\wamp\www\AbstractTeam
+USERNAME=Ahmed Taha
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.2 Build 9200 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 3857108k(1069008k free), swap 8575700k(3111596k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (21.0-b17) for windows-amd64 JRE (1.7.0-b147), built on Jun 27 2011 02:19:45 by "java_re" with unknown MS VC++:1600
+
+time: Sun Jun 29 14:47:20 2014
+elapsed time: 0 seconds
+
