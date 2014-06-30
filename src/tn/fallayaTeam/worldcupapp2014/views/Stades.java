@@ -129,7 +129,7 @@ public class Stades extends Activity {
 				new DownloadImageTask(imageView).execute(imageIDs[position]);
 				imageView.setBackgroundResource(itemBackground);
 
-		
+		System.out.println();
 			return imageView;
 		}
 	}
