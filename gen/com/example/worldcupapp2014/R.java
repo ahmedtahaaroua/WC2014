@@ -15,19 +15,24 @@ public final class R {
     }
     public static final class id {
         public static final int button1=0x7f070001;
-        public static final int menu_settings=0x7f070002;
+        public static final int gallery1=0x7f070002;
+        public static final int imageview1=0x7f070003;
+        public static final int menu_settings=0x7f070004;
         public static final int textView1=0x7f070000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int activity_stades=0x7f030001;
     }
     public static final class menu {
         public static final int activity_main=0x7f060000;
+        public static final int activity_stades=0x7f060001;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
         public static final int hello_world=0x7f040001;
         public static final int menu_settings=0x7f040002;
+        public static final int title_activity_stades=0x7f040003;
     }
     public static final class style {
         /** 
@@ -57,4 +62,25 @@ public final class R {
          */
         public static final int AppTheme=0x7f050001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a Gallery1.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Gallery1_android_galleryItemBackground com.example.worldcupapp2014:android_galleryItemBackground}</code></td><td></td></tr>
+           </table>
+           @see #Gallery1_android_galleryItemBackground
+         */
+        public static final int[] Gallery1 = {
+            0x0101004c
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.worldcupapp2014.R.attr#android_galleryItemBackground}
+          attribute's value can be found in the {@link #Gallery1} array.
+          @attr name android:android_galleryItemBackground
+        */
+        public static final int Gallery1_android_galleryItemBackground = 0;
+    };
 }
